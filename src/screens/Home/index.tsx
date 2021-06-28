@@ -10,9 +10,9 @@ export function Home() {
 
     const [category, setCategory] = useState('')
 
-    function handleCategorySelect(categoryId: string){
-        categoryId === category ? setCategory('') :setCategory(categoryId); 
-    } 
+    function handleCategorySelect(categoryId: string) {
+        categoryId === category ? setCategory('') : setCategory(categoryId);
+    }  
 
     return(
         <View>
@@ -22,12 +22,12 @@ export function Home() {
                 <ButtonAdd />
             </View>
             
-            <View>
-                <CategorySelect 
-                    categorySelected={category}
-                    setCategory={handleCategorySelect}
-                />
-            </View>
+            
+            <CategorySelect 
+                categorySelected={category}
+                setCategory={handleCategorySelect}
+            />
+            
 
         </View>
     )
