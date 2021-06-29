@@ -14,5 +14,14 @@ export const styles = StyleSheet.create({
         //pega o espaçamento da barra do iphone X e adciona mais 26
         marginTop: getStatusBarHeight() + 26,
         marginBottom: 42
+    },
+
+    content: {
+        marginTop: 42
+    },
+    
+    matches: {
+        marginTop: 24,
+        marginLeft: 24
     }
 }   )
